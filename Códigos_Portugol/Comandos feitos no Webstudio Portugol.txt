@@ -1,0 +1,68 @@
+programa
+{
+
+	inclua biblioteca Util
+	
+	funcao inicio()
+	{
+		inteiro init, final, soma = 0
+		//init = 1
+		//final = 10
+
+		escreva("Informe o número de inicio: ")
+		leia(init)
+		limpa()
+		
+		escreva("Informe o número de fim: ")
+		leia(final)
+		limpa()
+
+		enquanto(init <= final){
+			
+			soma = soma + init
+			
+			escreva("A soma atual é: ", soma)
+
+			init = init + 1
+
+			Util.aguarde(1500)
+			
+			limpa()
+		}
+
+		escreva("A soma do intervalo entre os números é: ", soma)
+		
+	}
+}
+
+
+programa
+{
+	
+	inclua biblioteca Util
+	
+	funcao inicio()
+	{
+		inteiro contador, i
+
+		//contador = 10
+		
+		escreva("Informe um número para o contador: ")
+		leia(contador)
+
+		para(i = contador; i > 0; i--){
+
+			limpa()
+
+			escreva("Detonação em: ", i, " segundos!")
+			Util.aguarde(1000)
+			
+		}
+
+		limpa()
+
+		escreva("Booooom!")
+		
+		
+	}
+}
